@@ -1,0 +1,389 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <style>
+    .parent{
+        display: flex;
+        flex-direction: column;
+        border: 0.5px solid black;
+        height: 1500px;
+    }
+    .child_a{
+        height: 400px;
+       font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .a_1{
+        font-size: 20px;
+        height: 61px;
+        display: flex;
+        flex-direction: row;
+    }
+    .a1_1{
+        font-size: 20px;
+        width: 369px;
+        padding-top: 5px;
+    }
+    .a1_2{
+        font-size: 20px;
+        width: 369px;
+        padding-top: 20px;
+    }
+    .a1_3{
+        font-size: 20px;
+        width: 369px;
+    }
+    .a_2{
+        font-size: 20px;
+        height: 51px;
+        display: flex;
+        flex-direction: row;
+    }
+    .a2_1{
+        font-size: 20px;
+        width: 553.5px;
+        padding-top: 10px;
+    }
+    .a2_2{
+        font-size: 20px;
+        width: 553.5px;
+        padding-top: 10px;
+        padding-left: 314px;
+    }
+    .a_3{
+        font-size: 20px;
+        height: 131px;
+        display: flex;
+        flex-direction: row;
+    }
+    .a_4{
+        font-size: 20px;
+        height: 41px;
+        display: flex;
+        flex-direction: row;
+    }
+    .a_5{
+        font-size: 20px;
+        height: 131px;
+        display: flex;
+        flex-direction: row;
+    }
+    .a_6{
+        font-size: 20px;
+        height: 131px;
+        display: flex;
+        flex-direction: row;
+    }
+    .child_b{
+        font-size: 20px;
+        height: 650px;
+      
+        display: flex;
+        flex-direction: column;
+    }
+    .b_1{
+        font-size: 20px;
+        height: 50px;
+    }
+    .b_2{
+        font-size: 20px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+    .b2_1{
+        font-size: 20px;
+        width: 400px;
+    }
+    .b2_2{
+        font-size: 20px;
+        width: 707px;
+    }
+    .b_3{
+        font-size: 20px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .b3_1{
+        font-size: 20px;
+        width:400px ;
+    }
+    .b3_2{
+        font-size: 20px;
+        width:707px ;
+    }
+    .b_4{
+        font-size: 20px;
+        height: 460px;
+        display: flex;
+        flex-direction: row;
+    }
+    .b4_1{
+        font-size: 20px;
+        border: 0.2px solid black;
+        width: 833px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .b4_1_1{
+        font-size: 20px;
+        border-top: 0.2px solid black;
+        height: 43px;
+    }
+    .b4_1_2{
+        font-size: 20px;
+        height: 124.6px;
+        display: flex;
+        flex-direction: row;
+    }
+    .b4_1_2_1{
+        font-size: 20px;
+        width: 200px;
+    }
+    .b4_1_2_2{
+        font-size: 20px;
+        width: 450px;
+    }
+    .b4_1_3{
+        font-size: 20px;
+        height: 124.6px;
+        display: flex;
+        flex-direction: row;
+    }
+    .b4_1_3_1{
+        font-size: 20px;
+        width: 200px;
+    }
+    .b4_1_3_2{
+        font-size: 20px;
+        width: 450px;
+    }
+    
+    .b4_1_4{
+        font-size: 20px;
+        height: 124.6px;
+        display: flex;
+        flex-direction: row;
+    }
+    .b4_1_4_1{
+        font-size: 20px;
+       width: 200px;
+    }
+    .b4_1_4_2{
+        font-size: 20px;
+       width: 450px;
+    }
+   
+    .b4_1_5{
+        font-size: 20px;
+        height: 43px;
+    }
+    .b4_2{
+        font-size: 20px;
+        width: 276px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .b4_2_1{
+        font-size: 20px;
+        width: 207px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .b4_2_1_1{
+        font-size: 20px;
+        border: 0.2px solid black;
+        height: 43px;
+    }
+    .b4_2_1_2{
+        font-size: 20px;
+        border: 0.2px solid black;
+        height: 373px;
+    }
+    .b4_2_1_3{
+        font-size: 20px;
+        border: 0.2px solid black;
+        height: 43px;
+    }
+    .b4_2_2{
+        font-size: 20px;
+        width: 69px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .b4_2_2_1{
+        font-size: 20px;
+        border: 0.2px solid black;
+        height: 43px;
+    }
+    .b4_2_2_2{
+        font-size: 20px;
+        border: 0.2px solid black;
+        height: 373px;
+    }
+    .b4_2_2_3{
+        font-size: 20px;
+        border: 0.2px solid black;
+        height: 43px;
+    }
+    .b_5{
+        font-size: 20px;
+        height:10px;
+    }
+    .child_c{
+        height: 450px;
+        border-top: 0.5px solid black;
+        display: flex;
+        flex-direction: column;
+    }
+    .c_1{
+       
+        height: 50px;
+    }
+    .c_2{
+       
+        height: 105px;
+        display: flex;
+        flex-direction: row;
+    }
+    .c2_1{
+      
+        width: 500px;
+    }
+    .c2_2{
+        
+        width: 600px;
+    }
+    .c_3{
+        
+        height: 182.5px;
+    }
+    .c_4{
+       border-top: 0.2px solid black;
+        height: 112.5px;
+    }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>VJ BILL</title>
+  </head>
+  <body>
+    <div class="djangtwo">
+      <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>lodge bill</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="parent">
+            <div class="child_a">
+                <div class="a_1">
+                    <div class="a1_1"><p>TEL:(022) 2261 2795 <br> (022) 2264 2977</p></div>
+                    <div class="a1_2 text-center"><b>(ESTABLISHED 1940)</b></div>
+                    <div class="a1_3"></div>
+                </div>
+                <div class="a_2">
+                        <div class="a2_1"><p>MOB: 09702441800/ 09004299958 Email:vijayniwaslodge@gmail.com</p></div>
+                        <div class="a2_2 text-center"></div>
+                </div>
+                <div class="a_3 text-center" style="padding-left:180px; padding-top:10px"><h1>THE VIJAY NIWAS HINDU LODGE <br> BEST LODGING</h1></div>
+                <div class="a_4 text-center" style="font-size:25px; padding-left: 180px"><P>17, dwarkadas X lane, Near C.S.T Fort, Mumbai-400 001</P></div>
+                <div class="a_5"></div>
+                <div class="a_6"></div>
+            </div>
+            <div class="child_b">
+                    <div class="b_1" style="padding-top: 10px;padding-left:50px;"></div>
+                    <div class="b_2">
+                            <div class="b2_1" style="padding-top:5px;padding-left:50px;"><p>ENTRY NO: {{detail_visa.Entry_No}}</p></div>
+                            <div class="b2_2"style="padding-top:5px; padding-left:80px;"><P>DATE: {{detail_visa.bill_date}} </P></div>
+                    </div>
+                    <div class="b_3">
+                            <div class="b3_1" style="padding-top:10px;padding-left:50px;"><p><b>MR/MRS/MS:</b>  {{detail_visa.Name_of_Visitor}}</p></div>
+                            <div class="b3_2" style="padding-top:10px;padding-left:80px;"><P><b>BEDROOM NO.</b> {{detail_visa.Room_No}}</P></div>
+                    </div>
+                    <div class="b_4">
+                        <div class="b4_1">
+                            <div class="b4_1_1"></div>
+                            <div class="b4_1_2">
+                                <div class="b4_1_2_1" style="padding-top: 150px; padding-left: 50px;"><b>CHECK IN: {{detail_visa.check_in}}</b></div>
+                                <div class="b4_1_2_2"style="padding-top: 150px; padding-left: 280px;"><b>CHECK OUT: {{detail_visa.check_out}}</b></div>
+                            </div> 
+                            <div class="b4_1_3">
+                                <div class="b4_1_3_1"style="padding-top: 50px; padding-left: 50px;"></div>
+                                <div class="b4_1_3_2"style="padding-top: 50px; padding-left: 250px;"></div>
+                            </div>
+                            <div class="b4_1_4">
+                                <div class="b4_1_4_1"style="padding-top: 50px; padding-left: 50px;"></div>
+                                <div class="b4_1_4_2"style="padding-top: 70px; padding-left: 280px;"><b>AMOUNT FOR STAY:</b></div>
+                            </div>
+                            <p style="padding-top: 2px; padding-left: 50px;"><b>DATE:&emsp13; {{detail_visa.bill_date}} </b>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;<b>TOTAL AMOUNT:</b></p> 
+                        </div>
+                        <div class="b4_2">
+                            <div class="b4_2_1">
+                                <div class="b4_2_1_1 text-center">RS.</div>
+                                <div class="b4_2_1_2"></div>
+                                <div class="b4_2_1_3 text-center">{{detail_visa.Total_Amount}}/-</div>
+                            </div>
+                            <div class="b4_2_2">
+                                <div class="b4_2_2_1 text-center">PAISE</div>
+                                <div class="b4_2_2_2"></div>
+                                <div class="b4_2_2_3 text-center">.00 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b_5"></div>
+            </div>
+            <div class="child_c">
+                    <div class="c_1 text-center" style="font-size:24px; padding-top: 4px"><p><b>ADVANCE PAYMENT RECIEVED BY VIJAY HINDU NIWAS IN CASH:  RS.{{detail_visa.Advance}}/-</b></p></div>
+                    <div class="c_2">
+                            <div class="c2_1 text-center" style="padding-top:20px;"><P><b>NO SMOKING, NO ALCOHOL. STRICTLY PROHIBITED <br> DORMITORY RATE IS PER PERSON PER DAY. <br> INDIVIDUAL BED IS ONE UNIT OF ACCOMODATION.</b></P></div>
+                            <div class="c2_2"style="padding-top: 35px; padding-left: 310px;"><b>______________________________&emsp13;</b> <br> <b style="PADDING-LEFT:62PX;">CASHIER</b></div>
+                    </div>
+                    <div class="c_3"><P style="padding-left:50px"><B>IMPORTANT NOTICE:</B> <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) EVERYDAY FROM MORNING 8AM A NEW DAY WILL BE COUNTED FOR STAY. </p>  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)NO PART OF THE DAY WILL BE CHARGED DIFFERENTLY.</p> <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3)PAYMENT FOR LODGE STAY WILL BE TAKEN IN ADVANCE.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4)CHECKOUT AFTER MORNING 8AM WILL BE CHARGED ONE DAY'S FARE. </p></P></div>
+                    <div class="c_4 text-center" style="padding-top:20px; font-size:19px"><p><b>SITUATED IN THE HEART OF OF BUSSINESS LOCALITY. A MINUTE'S WALK FROM C.S.T STATION.</b> <br> <b>CHECKOUT TIME 8AM MORNING.</b> <br> <b>GOD BLESS YOU!</b></p></div>
+            </div>
+        </div>
+      </div>  
+
+
+  </body>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
